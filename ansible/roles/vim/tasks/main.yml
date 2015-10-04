@@ -1,0 +1,6 @@
+---
+- name: clone Vundle
+  git: repo=https://github.com/VundleVim/Vundle.vim.git dest=~/.vim/bundle/Vundle.vim
+
+- name: install/update Vim plugins
+  command: vim +PluginInstall +qall

@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  roles:
+    - { role: homebrew, tags: ['homebrew'] }
+    - { role: dotfiles, tags: ['dotfiles'] }
+    - { role: sublime, tags: ['editor', 'sublime'] }
+    - { role: vim, tags: ['editor', 'vim'] }

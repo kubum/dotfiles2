@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"ColorPicker",
+		"DashDoc",
+		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
+		"Elixir",
+		"ElixirSublime",
+		"Emmet",
+		"ExpandRegion",
+		"GitGutter",
+		"Highlighter",
+		"HTML Mustache",
+		"Logstash Syntax Highlighting",
+		"Package Control",
+		"Pretty JSON",
+		"Puppet",
+		"RailsCasts Colour Scheme",
+		"Ruby Hash Converter",
+		"Ruby Markers",
+		"RubyTest",
+		"SCSS",
+		"sublime-github",
+		"SublimeGit",
+		"Theme - Afterglow"
+	]
+}

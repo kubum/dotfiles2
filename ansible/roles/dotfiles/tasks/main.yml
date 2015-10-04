@@ -1,0 +1,10 @@
+---
+- name: Symlink dotfiles
+  file: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
+    dest=~/{{ item }}
+    state=link
+    force=yes
+  with_items:
+    - .vimrc
+    - .gemrc
+    - .tmux.conf

@@ -11,3 +11,11 @@
     - .vimrc
     - .gemrc
     - .tmux.conf
+    - .zshrc
+
+- name: Add sensitive dotfiles
+  copy: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
+    dest=~/{{ item }}
+    force=no
+  with_items:
+    - .identity

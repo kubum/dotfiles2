@@ -1,4 +1,16 @@
 ---
+- name: Makes sure syntax directory exists
+  file: path="~/.vim/syntax" state=directory
+
+- name: Symlink all syntax files
+  file:
+    src: "{{ ansible_env.PWD }}/roles/vim/files/syntax/{{ item }}"
+    dest: "~/.vim/syntax/{{ item }}"
+    state: link
+    force: no
+  with_items:
+    - csp.vim
+
 - name: clone Vundle
   git: repo=https://github.com/VundleVim/Vundle.vim.git dest=~/.vim/bundle/Vundle.vim
 

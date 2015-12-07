@@ -19,6 +19,7 @@ brew 'wget'
 brew 'leiningen'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
+brew 'the_silver_searcher'
 
 cask 'google-chrome'
 cask 'google-chrome-canary'

@@ -28,6 +28,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'wincent/command-t'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'rking/ag.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +64,10 @@ set updatetime=1000 "default: 4000
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" Ag
+let g:ag_working_path_mode="r"
 
 map <up> <nop>
 map <down> <nop>

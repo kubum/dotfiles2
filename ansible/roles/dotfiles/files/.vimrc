@@ -29,6 +29,8 @@ Plugin 'wincent/command-t'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'rking/ag.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,10 +66,19 @@ set updatetime=1000 "default: 4000
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeFind<CR>
+
 let NERDTreeShowHidden=1
 
 " Ag
 let g:ag_working_path_mode="r"
+
+" CtrlP
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
 
 map <up> <nop>
 map <down> <nop>
@@ -85,3 +96,7 @@ let mapleader=","
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" Clipboard sync
+set clipboard=unnamed
+

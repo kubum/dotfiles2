@@ -31,6 +31,7 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'rking/ag.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-eunuch'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -100,3 +101,5 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " Clipboard sync
 set clipboard=unnamed
 
+" Allow netrw to remove non-empty local directories
+let g:netrw_localrmdir='rm -r'

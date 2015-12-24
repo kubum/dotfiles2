@@ -32,6 +32,8 @@ Plugin 'rking/ag.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-eunuch'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +48,8 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
+set list                        " show trailing whitespace
+set listchars=tab:▸\ ,trail:▫
 
 " Searching
 set hlsearch                    " highlight matches
@@ -55,6 +59,12 @@ set smartcase                   " ... unless they contain at least one capital l
 
 " View
 set number
+set ruler                                                    " show where you are
+
+" Menu
+set wildmenu
+set wildmode=longest:list,full
+set laststatus=2                                             " always show statusline
 
 " Ctags
 set tags=./tags

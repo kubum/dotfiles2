@@ -44,6 +44,8 @@ syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 
+set t_Co=256
+
 " Whitespace
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)

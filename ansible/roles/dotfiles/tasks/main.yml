@@ -12,6 +12,9 @@
     - .gemrc
     - .tmux.conf
     - .zshrc
+    - .gitconfig
+    - .gitignore_global
+    - .git_template
 
 - name: Add sensitive dotfiles
   copy: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
@@ -19,3 +22,4 @@
     force=no
   with_items:
     - .identity
+    - .gitconfig_identity

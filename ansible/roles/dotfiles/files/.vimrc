@@ -40,6 +40,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'jpo/vim-railscasts-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +51,7 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 
 set t_Co=256
+colorscheme railscasts
 
 " Whitespace
 set nowrap                      " don't wrap lines

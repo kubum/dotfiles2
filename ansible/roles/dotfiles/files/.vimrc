@@ -68,7 +68,8 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 " View
-set number
+set relativenumber 
+set number 
 set ruler                                                    " show where you are
 
 " Menu

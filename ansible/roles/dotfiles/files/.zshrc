@@ -138,3 +138,6 @@ export GOPATH=$HOME/Go
 
 # Identity information
 source ~/.identity
+
+# Term
+export TERM=xterm-256color

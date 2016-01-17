@@ -50,7 +50,9 @@ syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 
+" Colors
 set t_Co=256
+set term=screen-256color
 colorscheme railscasts
 
 " Whitespace

@@ -1,6 +1,6 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-filetype plugin indent on    " required
+set nocompatible          " be iMproved, required
+filetype off              " required
+filetype plugin indent on " required
 
 " enable matchit for enchanced %
 runtime macros/matchit.vim
@@ -62,10 +62,13 @@ set list                        " show trailing whitespace
 set listchars=tab:▸\ ,trail:▫   " show tabs and spaces
 
 " Searching
-set hlsearch                    " highlight matches
-set incsearch                   " incremental searching
+set hlsearch                    " highlight all matches after entering a search pattern
+set incsearch                   " highlight while searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
 
 " View
 set relativenumber 
@@ -118,9 +121,6 @@ set cc=80
 
 " Set Leader
 let mapleader=","
-
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 " Clipboard sync
 set clipboard=unnamed

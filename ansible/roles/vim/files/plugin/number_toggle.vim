@@ -4,7 +4,8 @@ function! NumberToggle()
     set number
   else
     set relativenumber
+    set number
   endif
-endfunc
+endfunction
 
 nnoremap <C-n> :call NumberToggle()<cr>

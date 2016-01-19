@@ -54,6 +54,8 @@ set showcmd                     " display incomplete commands
 set t_Co=256
 set term=screen-256color
 colorscheme railscasts
+" Set Leader
+let mapleader=","
 
 " Whitespace
 set nowrap                      " don't wrap lines
@@ -84,6 +86,8 @@ set laststatus=2                                             " always show statu
 
 " Ctags
 set tags=./tags
+" Open tags in a new tab
+nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T
 
 " Use ack instead of grep
 set grepprg=ack
@@ -92,13 +96,13 @@ set grepprg=ack
 set updatetime=1000 "default: 4000
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeFind<CR>
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
 
 let NERDTreeShowHidden=1
 
 " Ag
-let g:ag_working_path_mode="r"
+let g:ag_working_path_mode="ra"
 
 " CtrlP
 let g:ctrlp_show_hidden = 1
@@ -110,6 +114,11 @@ let g:ctrlp_prompt_mappings = {
 let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
+nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
+
+" Unset arrows
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>

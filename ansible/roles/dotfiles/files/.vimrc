@@ -158,3 +158,7 @@ nnoremap <leader>orr :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
 nnoremap <leader>scr :VtrSendCommandToRunner<cr>
 nnoremap <leader>slr :VtrSendLinesToRunner<cr>
 nnoremap <leader>apr :VtrAttachToPane<cr>
+
+" increase timeout
+set timeoutlen=5000
+

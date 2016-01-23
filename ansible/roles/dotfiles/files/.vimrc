@@ -150,6 +150,9 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
 
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
 " vim-tmux-runner
 nnoremap <leader>orr :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
 nnoremap <leader>scr :VtrSendCommandToRunner<cr>

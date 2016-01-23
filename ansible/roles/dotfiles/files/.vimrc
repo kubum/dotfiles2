@@ -42,6 +42,7 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-runner'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -148,3 +149,9 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+" vim-tmux-runner
+nnoremap <leader>orr :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
+nnoremap <leader>scr :VtrSendCommandToRunner<cr>
+nnoremap <leader>slr :VtrSendLinesToRunner<cr>
+nnoremap <leader>apr :VtrAttachToPane<cr>

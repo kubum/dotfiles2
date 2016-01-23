@@ -118,7 +118,6 @@ let g:ctrlp_use_caching = 0
 
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 
 " Unset arrows
 map <up> <nop>

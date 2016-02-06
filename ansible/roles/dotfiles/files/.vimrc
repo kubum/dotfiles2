@@ -1,6 +1,5 @@
 set nocompatible          " be iMproved, required
 filetype off              " required
-filetype plugin indent on " required
 
 " enable matchit for enchanced %
 runtime macros/matchit.vim
@@ -47,7 +46,10 @@ Plugin 'christoomey/vim-tmux-runner'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-syntax enable
+filetype on                  " required
+filetype plugin indent on    " required
+
+syntax enable                " highlight syntax
 
 set encoding=utf-8
 set showcmd                     " display incomplete commands

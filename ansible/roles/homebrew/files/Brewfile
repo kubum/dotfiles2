@@ -20,6 +20,7 @@ brew 'leiningen'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
 brew 'the_silver_searcher'
+brew 'htop'
 
 cask 'google-chrome'
 cask 'google-chrome-canary'

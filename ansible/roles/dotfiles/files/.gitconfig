@@ -4,5 +4,6 @@
 	templatedir = ~/.git_template
 [alias]
   ctags = !.git/hooks/ctags
+	sla = log --oneline --decorate --graph --all --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'
 [include]
   path = ~/.gitconfig_identity

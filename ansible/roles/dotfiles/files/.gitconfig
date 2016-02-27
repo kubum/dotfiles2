@@ -9,3 +9,5 @@
 	uncommit = reset --soft HEAD^
 [include]
   path = ~/.gitconfig_identity
+[push]
+	default = upstream

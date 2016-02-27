@@ -11,3 +11,5 @@
   path = ~/.gitconfig_identity
 [push]
 	default = upstream
+[fetch]
+	prune = true

@@ -42,6 +42,7 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-tmux-runner'
+Plugin 'ecomba/vim-ruby-refactoring'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

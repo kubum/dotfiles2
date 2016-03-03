@@ -15,6 +15,7 @@
     - .gitconfig
     - .gitignore_global
     - .git_template
+    - .agignore
 
 - name: Add sensitive dotfiles
   copy: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}

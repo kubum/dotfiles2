@@ -76,8 +76,8 @@ set incsearch                   " highlight while searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-" <Ctrl-l> redraws the screen and removes any search highlighting.
-nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
+" <leader>l redraws the screen and removes any search highlighting.
+nnoremap <leader>l :nohlsearch<cr>
 
 " View
 set relativenumber 

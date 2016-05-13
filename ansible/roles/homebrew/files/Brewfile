@@ -2,6 +2,7 @@ tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'homebrew/brewdler'
 tap 'homebrew/versions'
+tap 'homebrew/science'
 
 brew 'caskroom/cask/brew-cask'
 brew 'ctags'
@@ -22,6 +23,10 @@ brew 'zsh-syntax-highlighting'
 brew 'the_silver_searcher'
 brew 'htop'
 brew 'hub'
+brew 'gnuplot', args: ['with-qt']
+brew 'fontconfig', args: ['universal']
+brew 'octave'
+brew 'gsl'
 
 cask 'google-chrome'
 cask 'google-chrome-canary'

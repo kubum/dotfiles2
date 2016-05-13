@@ -104,6 +104,7 @@ set updatetime=1000 "default: 4000
 nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>f :NERDTreeFind<CR>
 
+let NERDTreeIgnore=['\.swp$']
 let NERDTreeShowHidden=1
 
 " Ag

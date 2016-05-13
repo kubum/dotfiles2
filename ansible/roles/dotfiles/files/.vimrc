@@ -164,3 +164,5 @@ nnoremap <leader>apr :VtrAttachToPane<cr>
 " increase timeout
 set timeoutlen=5000
 
+" enable built-in autocomplete
+set omnifunc=syntaxcomplete#Complete

@@ -27,6 +27,7 @@ brew 'gnuplot', args: ['with-qt']
 brew 'fontconfig', args: ['universal']
 brew 'octave'
 brew 'gsl'
+brew 'smlnj'
 
 cask 'google-chrome'
 cask 'google-chrome-canary'

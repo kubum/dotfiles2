@@ -43,6 +43,7 @@ Plugin 'jpo/vim-railscasts-theme'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'dyng/ctrlsf.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

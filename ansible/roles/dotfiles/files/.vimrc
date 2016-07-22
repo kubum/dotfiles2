@@ -161,10 +161,10 @@ endif
 autocmd VimResized * :wincmd =
 
 " vim-tmux-runner
-nnoremap <leader>orr :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
-nnoremap <leader>scr :VtrSendCommandToRunner<cr>
-nnoremap <leader>slr :VtrSendLinesToRunner<cr>
-nnoremap <leader>apr :VtrAttachToPane<cr>
+nnoremap <leader>or :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
+nnoremap <leader>sc :VtrSendCommandToRunner<cr>
+nnoremap <leader>sl :VtrSendLinesToRunner<cr>
+nnoremap <leader>ap :VtrAttachToPane<cr>
 
 " increase timeout
 set timeoutlen=5000

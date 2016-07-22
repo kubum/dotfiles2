@@ -44,6 +44,8 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'dyng/ctrlsf.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'elubow/cql-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

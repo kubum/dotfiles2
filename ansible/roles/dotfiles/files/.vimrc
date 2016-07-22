@@ -109,6 +109,7 @@ nnoremap <leader>f :NERDTreeFind<CR>
 
 let NERDTreeIgnore=['\.swp$']
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = ['\.pyc$', '\.swp$']
 
 " Ag
 let g:ag_working_path_mode="ra"

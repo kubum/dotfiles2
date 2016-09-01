@@ -11,6 +11,7 @@ brew 'git', args: ['with-pcre']
 brew 'gnupg'
 brew 'reattach-to-user-namespace'
 # brew 'mariadb'
+brew 'postgres'
 brew 'openssl'
 brew 'pstree'
 brew 'tmux'
@@ -28,6 +29,8 @@ brew 'fontconfig', args: ['universal']
 brew 'octave'
 brew 'gsl'
 brew 'smlnj'
+brew 'typesafe-activator'
+brew 'graphviz'
 
 cask 'google-chrome'
 cask 'google-chrome-canary'

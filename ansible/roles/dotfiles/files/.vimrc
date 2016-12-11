@@ -46,6 +46,12 @@ Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'elubow/cql-vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'ervandew/supertab'
+Plugin 'Shougo/vimproc.vim'
+" Haskell
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/neco-ghc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,8 +68,12 @@ set showcmd                     " display incomplete commands
 set t_Co=256
 set term=screen-256color
 colorscheme railscasts
+
 " Set Leader
 let mapleader=","
+
+setlocal spell " Check spelling
+set complete+=kspell " Word completion <Cr>-N
 
 " Whitespace
 set nowrap                      " don't wrap lines
@@ -168,6 +178,34 @@ nnoremap <leader>ap :VtrAttachToPane<cr>
 
 " increase timeout
 set timeoutlen=5000
+
+" setup syntactic
+map <Leader>s :SyntasticToggleMode<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" super tab
+
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+
+if has("gui_running")
+  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+else " no gui
+  if has("unix")
+    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+  endif
+endif
+
+" Haskell autocomplete
+let g:haskellmode_completion_ghc = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " enable built-in autocomplete
 set omnifunc=syntaxcomplete#Complete

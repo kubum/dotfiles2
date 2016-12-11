@@ -52,6 +52,8 @@ Plugin 'Shougo/vimproc.vim'
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
+" Scala
+Plugin 'derekwyatt/vim-scala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,6 +84,8 @@ set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set list                        " show trailing whitespace
 set listchars=tab:▸\ ,trail:▫   " show tabs and spaces
+set showmode                    " show mode
+set autoindent                  " use auto indentation
 
 " Searching
 set hlsearch                    " highlight all matches after entering a search pattern

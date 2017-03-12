@@ -54,6 +54,8 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 " Scala
 Plugin 'derekwyatt/vim-scala'
+" Idris
+Plugin 'idris-hackers/idris-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

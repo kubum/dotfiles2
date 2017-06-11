@@ -57,6 +57,7 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'ensime/ensime-vim'
 " Idris
 Plugin 'idris-hackers/idris-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -178,26 +179,24 @@ endif
 autocmd VimResized * :wincmd =
 
 " vim-tmux-runner
-nnoremap <leader>or :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
-nnoremap <leader>sc :VtrSendCommandToRunner<cr>
-nnoremap <leader>sl :VtrSendLinesToRunner<cr>
-nnoremap <leader>ap :VtrAttachToPane<cr>
+nnoremap <leader>rr :VtrOpenRunner {'orientation': 'v', 'percentage': 20}<cr>
+nnoremap <leader>rc :VtrSendCommandToRunner<cr>
+nnoremap <leader>rl :VtrSendLinesToRunner<cr>
+nnoremap <leader>ra :VtrAttachToPane<cr>
 
 " increase timeout
 set timeoutlen=5000
 
 " setup syntactic
-map <Leader>s :SyntasticToggleMode<CR>
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:syntastic_idris_checkers = ['idris']
 " super tab
 
 let g:SuperTabDefaultCompletionType = '<c-x><c-o>'

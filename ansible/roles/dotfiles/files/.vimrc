@@ -58,6 +58,8 @@ Plugin 'ensime/ensime-vim'
 " Idris
 Plugin 'idris-hackers/idris-vim'
 Plugin 'Valloric/YouCompleteMe'
+" Tex
+Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -238,3 +240,6 @@ au FileType scala nnoremap <localleader>df :EnDeclaration<CR>
 
 nnoremap <localleader>t :EnTypeCheck<CR>
 let ensime_server_v2=1
+
+" Tex
+let g:vimtex_view_method  = 'skim'

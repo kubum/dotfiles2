@@ -16,7 +16,7 @@ brew 'openssl'
 brew 'pstree'
 brew 'tmux'
 brew 'v8'
-brew 'vim'
+brew 'vim', args:['with-client-server']
 brew 'wget'
 brew 'leiningen'
 brew 'zsh'

@@ -123,9 +123,6 @@ bindkey '§' vi-forward-word
 # Git completion
 source /usr/local/share/zsh/site-functions
 
-# Docker
-eval "$(docker-machine env default)"
-
 # Go
 export GOPATH=$HOME/Go
 

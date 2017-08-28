@@ -131,3 +131,6 @@ source ~/.identity
 
 # Term
 export TERM=xterm-256color
+
+# LaTeX
+export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin

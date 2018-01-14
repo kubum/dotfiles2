@@ -22,5 +22,11 @@
     dest=~/{{ item }}
     force=no
   with_items:
-    - .identity
     - .gitconfig_identity
+
+- name: Add zsh theme
+  copy: src={{ ansible_env.PWD }}/roles/dotfiles/files/zsh-themes/{{ item }}
+    dest=~/.oh-my-zsh/themes/{{ item }}
+    force=no
+  with_items:
+    - .andrey.zsh-theme

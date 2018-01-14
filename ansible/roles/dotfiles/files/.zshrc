@@ -126,9 +126,6 @@ source /usr/local/share/zsh/site-functions
 # Go
 export GOPATH=$HOME/Go
 
-# Identity information
-source ~/.identity
-
 # Term
 export TERM=xterm-256color
 

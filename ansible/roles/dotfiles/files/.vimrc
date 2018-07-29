@@ -54,12 +54,8 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 " Scala
 Plugin 'derekwyatt/vim-scala'
-Plugin 'ensime/ensime-vim'
 " Idris
 Plugin 'idris-hackers/idris-vim'
-Plugin 'Valloric/YouCompleteMe'
-" Tex
-Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -234,12 +230,3 @@ nmap     <C-F>l <Plug>CtrlSFQuickfixPrompt
 vmap     <C-F>l <Plug>CtrlSFQuickfixVwordPath
 vmap     <C-F>L <Plug>CtrlSFQuickfixVwordExec
 
-" Scala Ensime
-autocmd BufWritePost *.scala silent :EnTypeCheck " Type checks
-au FileType scala nnoremap <localleader>df :EnDeclaration<CR>
-
-nnoremap <localleader>t :EnTypeCheck<CR>
-let ensime_server_v2=1
-
-" Tex
-let g:vimtex_view_method  = 'skim'

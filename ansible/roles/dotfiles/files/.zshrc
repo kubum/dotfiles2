@@ -93,6 +93,9 @@ export PATH="$HOME/miniconda/bin:$PATH"
 export DYLD_FALLBACK_LIBRARY_PATH="$HOME/miniconda/lib/:$DYLD_FALLBACK_LIBRARY_PATH"
 export DYLD_FALLBACK_LIBRARY_PATH="/usr/X11/lib:$DYLD_FALLBACK_LIBRARY_PATH"
 
+# Add system DYLD libs
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/usr/lib:/usr/local/lib"
+
 # Editor
 export EDITOR=vim
 
@@ -131,3 +134,6 @@ export TERM=xterm-256color
 
 # LaTeX
 export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
+
+# Stack
+export PATH=$PATH:/Users/andreyfadeyev/.local/bin

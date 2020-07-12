@@ -29,26 +29,22 @@ Plugin 'honza/vim-snippets'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-bundler'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'rking/ag.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-eunuch'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 Plugin 'kana/vim-textobj-user'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'christoomey/vim-tmux-runner'
-Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'dyng/ctrlsf.vim'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'elubow/cql-vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'ervandew/supertab'
-Plugin 'Shougo/vimproc.vim'
+" Plugin 'ervandew/supertab'
+" Plugin 'Shougo/vimproc.vim'
 " Haskell
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
@@ -56,7 +52,7 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'derekwyatt/vim-scala'
 " Idris
 Plugin 'idris-hackers/idris-vim'
-
+Plugin 'autozimu/LanguageClient-neovim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -70,13 +66,11 @@ set showcmd                     " display incomplete commands
 
 " Colors
 set t_Co=256
-set term=screen-256color
 colorscheme railscasts
 
 " Set Leader
 let mapleader=","
 
-setlocal spell " Check spelling
 set complete+=kspell " Word completion <Cr>-N
 
 " Whitespace

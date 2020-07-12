@@ -49,7 +49,7 @@ ZSH_THEME="andrey"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx ruby brew bundler capistrano gem rails rake rvm sublime)
+plugins=(git osx brew)
 
 # User configuration
 
@@ -83,30 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# RVM
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# added by Miniconda 3.10.1 installer
-export PATH="$HOME/miniconda/bin:$PATH"
-
-# miniconda libs
-export DYLD_FALLBACK_LIBRARY_PATH="$HOME/miniconda/lib/:$DYLD_FALLBACK_LIBRARY_PATH"
-export DYLD_FALLBACK_LIBRARY_PATH="/usr/X11/lib:$DYLD_FALLBACK_LIBRARY_PATH"
-
-# Add system DYLD libs
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:/usr/lib:/usr/local/lib"
-
 # Editor
-export EDITOR=vim
-
-# Unicorn
-alias u='bundle exec unicorn_rails -c config/unicorn.rb -p 3000'
-
-# Python
-alias p='source activate artirix'
-
-# Running java/python check
-alias pa="pstree | grep -E 'java|python'"
+export EDITOR=nvim
 
 # Load zsh-syntax-highlighting.
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -136,4 +114,25 @@ export TERM=xterm-256color
 export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
 
 # Stack
-export PATH=$PATH:/Users/andreyfadeyev/.local/bin
+export PATH="$PATH:$HOME/.local/bin"
+
+source ~/google-cloud-sdk/path.zsh.inc
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/andreyfadeyev/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/andreyfadeyev/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/andreyfadeyev/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/andreyfadeyev/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

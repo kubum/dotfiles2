@@ -4,5 +4,4 @@
     - { role: homebrew, tags: ['homebrew'] }
     - { role: dotfiles, tags: ['dotfiles'] }
     - { role: macos, tags: ['macos'] }
-    - { role: sublime, tags: ['editor', 'sublime'] }
     - { role: vim, tags: ['editor', 'vim'] }

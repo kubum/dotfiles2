@@ -9,28 +9,20 @@ brew 'fzf'
 brew 'git', args: ['with-pcre']
 brew 'gnupg'
 brew 'reattach-to-user-namespace'
-brew 'mariadb@10.0'
-brew 'postgres@9.5'
 brew 'openssl'
 brew 'pstree'
 brew 'tmux'
 brew 'v8'
 brew 'vim', args:['with-client-server']
 brew 'wget'
-brew 'leiningen'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
 brew 'the_silver_searcher'
-# brew 'htop' -- high sierra issues
 brew 'hub'
 brew 'gnuplot', args: ['with-qt']
 brew 'fontconfig', args: ['universal']
-brew 'octave'
 brew 'gsl'
-brew 'smlnj'
 brew 'graphviz'
-brew 'sleuthkit'
-brew 'ccm'
 brew 'ccat'
 brew 'z'
 brew 'fzf'

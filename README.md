@@ -21,7 +21,6 @@ $ ./run.sh
 ```sh
 $ ansible-playbook -i ansible/inventory -t dotfiles -v ansible/osx.yml
 $ ansible-playbook -i ansible/inventory -t homebrew -v ansible/osx.yml
-$ ansible-playbook -i ansible/inventory -t sublime -v ansible/osx.yml
 $ ansible-playbook -i ansible/inventory -t vim -v ansible/osx.yml
 $ ansible-playbook -i ansible/inventory -t editors -v ansible/osx.yml
 $ ansible-playbook -i ansible/inventory -t os -v ansible/osx.yml

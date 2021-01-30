@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Editor
-export EDITOR=nvim
+export EDITOR=vim
 
 # Load zsh-syntax-highlighting.
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -101,38 +101,7 @@ bindkey '§' vi-forward-word
 # Z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# Git completion
-source /usr/local/share/zsh/site-functions
-
-# Go
-export GOPATH=$HOME/Go
-
 # Term
 export TERM=xterm-256color
 
-# LaTeX
-export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin
-
-# Stack
-export PATH="$PATH:$HOME/.local/bin"
-
-source ~/google-cloud-sdk/path.zsh.inc
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/andreyfadeyev/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/andreyfadeyev/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/andreyfadeyev/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/andreyfadeyev/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.zshrc.local

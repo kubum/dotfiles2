@@ -12,6 +12,7 @@
     - .gemrc
     - .tmux.conf
     - .zshrc
+    - .zshrc_local
     - .gitconfig
     - .gitignore_global
     - .git_template
@@ -23,6 +24,7 @@
     force=no
   with_items:
     - .gitconfig_identity
+    - .zshrc.local
 
 - name: Add zsh theme
   copy: src={{ ansible_env.PWD }}/roles/dotfiles/files/zsh-themes/{{ item }}

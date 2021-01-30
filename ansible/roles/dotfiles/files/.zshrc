@@ -49,7 +49,7 @@ ZSH_THEME="andrey"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew)
+plugins=(git osx brew docker docker-compose)
 
 # User configuration
 
@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 # Load zsh-syntax-highlighting.
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Load zsh-autosuggestions.
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -99,7 +99,7 @@ bindkey '§' vi-forward-word
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Z
-. `brew --prefix`/etc/profile.d/z.sh
+source `brew --prefix`/etc/profile.d/z.sh
 
 # Term
 export TERM=xterm-256color

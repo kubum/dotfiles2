@@ -2,6 +2,9 @@
 - name: clone zsh-autosuggest
   git: repo=https://github.com/tarruda/zsh-autosuggestions.git dest=~/.zsh/zsh-autosuggestions
 
+- name: clone zsh-syntaxhighlighting
+  git: repo=https://github.com/zsh-users/zsh-syntax-highlighting.git dest=~/.zsh/zsh-syntax-highlighting
+
 - name: Symlink dotfiles
   file: src={{ ansible_env.PWD }}/roles/dotfiles/files/{{ item }}
     dest=~/{{ item }}
@@ -12,7 +15,6 @@
     - .gemrc
     - .tmux.conf
     - .zshrc
-    - .zshrc_local
     - .gitconfig
     - .gitignore_global
     - .git_template
